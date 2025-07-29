@@ -12,7 +12,7 @@ app.use(express.json());
 const server=createServer(app);
 
 const PORT=process.env.PORT || 5000;
-const allowedOrigins = ["http://localhost:5173","https://pointsleaderboard.netlify.app/"];
+const allowedOrigins = "https://pointsleaderboard.netlify.app/";
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
