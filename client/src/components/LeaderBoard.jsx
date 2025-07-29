@@ -5,8 +5,8 @@ import axios from 'axios'
 import io from 'socket.io-client'
 
 
-let baseUrl = "http://localhost:5000/api";
-const socket=io("http://localhost:5000");
+let baseUrl = "https://pointsredeem2.onrender.com/api";
+const socket=io("https://pointsredeem2.onrender.com/");
 const LeaderBoard = () => {
     const [users,setUsers]=useState([])
 

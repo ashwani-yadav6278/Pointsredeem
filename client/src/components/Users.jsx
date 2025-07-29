@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-let baseUrl = "http://localhost:5000/api";
+let baseUrl = "https://pointsredeem2.onrender.com/api";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [history,setHistory]=useState([]);
