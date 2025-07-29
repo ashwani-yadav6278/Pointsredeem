@@ -6,7 +6,10 @@ import io from 'socket.io-client'
 
 
 let baseUrl = "https://pointsredeem2.onrender.com/api";
-const socket=io("https://pointsredeem2.onrender.com/");
+const socket=io("https://pointsredeem2.onrender.com/",{
+    transports: ['websocket'],
+    withCredentials:true,
+});
 const LeaderBoard = () => {
     const [users,setUsers]=useState([])
 
