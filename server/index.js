@@ -12,13 +12,13 @@ app.use(express.json());
 const server=createServer(app);
 
 const PORT=process.env.PORT || 5000;
-const allowedOrigins = "http://localhost:5173";
+const allowedOrigins = ["http://localhost:5173","https://pointsleaderboard.netlify.app/"];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
 }));
 const io=new Server(server,{cors:{
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
     
 }});
